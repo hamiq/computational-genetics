@@ -1,4 +1,4 @@
-# Computational Genetics
+# 🧬 Computational Genetics
 
 Hello!
 
