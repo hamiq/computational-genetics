@@ -11834,124 +11834,6 @@ span.nbgrader-label {
   <div class="container">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h4>Final_Project_1 (Score: 20.0 / 20.0)</h4>
-        <div id="toc">
-          <ol>
-          
-            
-            
-          
-            
-            
-          
-            
-            
-          
-            
-            <li><a href="#cell-105665040cea53f2">Written response</a> (Score: 3.0 / 3.0)</li>
-            
-            
-          
-            
-            
-          
-            
-            <li><a href="#cell-a32f7bee88778be3">Written response</a> (Score: 3.0 / 3.0)</li>
-            
-            
-          
-            
-            
-          
-            
-            
-          
-            
-            <li><a href="#cell-69d3e5d10151be16">Written response</a> (Score: 2.0 / 2.0)</li>
-            
-            
-          
-            
-            
-          
-            
-            <li><a href="#cell-cb035fc1caba4917">Written response</a> (Score: 4.0 / 2.0)</li>
-            
-            
-          
-            
-            
-          
-            
-            <li><a href="#cell-b61be3d778e29197">Written response</a> (Score: 0.0 / 2.0)</li>
-            
-            
-          
-            
-            
-          
-            
-            <li><a href="#cell-9cb1df2a39c4b46a">Written response</a> (Score: 3.0 / 3.0)</li>
-            
-            
-            <li><a href="#comment-cell-9cb1df2a39c4b46a">Comment</a></li>
-            
-          
-            
-            
-          
-            
-            
-          
-            
-            <li><a href="#cell-575e76cef8940133">Coding free-response</a> (Score: 0.25 / 0.25)</li>
-            
-            
-          
-            
-            
-          
-            
-            <li><a href="#cell-dce89a72292cde8e">Coding free-response</a> (Score: 0.25 / 0.25)</li>
-            
-            
-          
-            
-            
-          
-            
-            <li><a href="#cell-8581042beb51b4fc">Coding free-response</a> (Score: 1.0 / 1.0)</li>
-            
-            
-          
-            
-            
-          
-            
-            <li><a href="#cell-779a2106cd2beb42">Coding free-response</a> (Score: 3.25 / 3.25)</li>
-            
-            
-          
-            
-            
-          
-            
-            
-          
-            
-            <li><a href="#cell-ab43aa2854f430a8">Coding free-response</a> (Score: 0.25 / 0.25)</li>
-            
-            
-          
-            
-            
-          
-            
-            
-          
-          
-          </ol>
-        </div>
       </div>
       <div class="panel-body">
         <div id="notebook" class="border-box-sizing">
@@ -11962,7 +11844,7 @@ span.nbgrader-label {
 </div>
 <div class="inner_cell">
     <div class="text_cell_render border-box-sizing rendered_html">
-      <h3 id="Honors-Computational-Genetics">Honors Computational Genetics<a class="anchor-link" href="#Honors-Computational-Genetics">&#182;</a></h3><h4 id="Final-Project-Step-#1:-Summarize-Data-and-Assess-Quality">Final Project Step #1: Summarize Data and Assess Quality<a class="anchor-link" href="#Final-Project-Step-#1:-Summarize-Data-and-Assess-Quality">&#182;</a></h4>
+      <h3 id="Honors-Computational-Genetics">Honors Computational Genetics<a class="anchor-link" href="#Honors-Computational-Genetics">&#182;</a></h3>
     </div>
   </div></div>
 
@@ -11971,51 +11853,16 @@ span.nbgrader-label {
 </div>
 <div class="inner_cell">
     <div class="text_cell_render border-box-sizing rendered_html">
-      <h6 id="As-with-most-Genomic-projects,-the-first-step-in-this-project-involves-summarizing-your-data-and-filtering-it-to-exclude-low-quality-sequences.-You-will-need-to:">As with most Genomic projects, the first step in this project involves summarizing your data and filtering it to exclude low-quality sequences. You will need to:<a class="anchor-link" href="#As-with-most-Genomic-projects,-the-first-step-in-this-project-involves-summarizing-your-data-and-filtering-it-to-exclude-low-quality-sequences.-You-will-need-to:">&#182;</a></h6><ul>
-<li>Calculate Pre-filtering Summary Information for your data</li>
-<li>Filter your data using <code>trimmomatic</code></li>
-<li>Calculate Post-filtering Summary Information for the filtered daat</li>
-</ul>
-<p>When running <code>trimmomatic</code>, be sure to specify options that will have it do the following:</p>
-<ol>
-<li>Only keep reads if they are at least 50 bp in length after trimming</li>
-<li>Remove the first nucleotide from the sequence if it has a Phred quality score between 0 and 10, and continue removing subsequent nucleotides until reaching one with a quality score above 10</li>
-<li>Same as #2 but for the nucleotides at the end of the sequence</li>
-<li>Calculate the average quality score for consecutive nucleotides in a window of size 4. If the score drops below 15, the remaining sequence should be trimmed.</li>
-<li>Include the same option from the lecture notebook that tells Trimmomatic to clip the adapter sequences.</li>
-</ol>
-<h6 id="See-the-Results-section-for-the-summary-information-you-will-need-to-collect-before-and-after-trimming">See the Results section for the summary information you will need to collect before and after trimming<a class="anchor-link" href="#See-the-Results-section-for-the-summary-information-you-will-need-to-collect-before-and-after-trimming">&#182;</a></h6>
+      <h3 id="Background">Background<a class="anchor-link" href="#Background">&#182;</a></h3>
     </div>
   </div></div>
 
 <div class="cell border-box-sizing text_cell rendered">
-  <div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-    <div class="text_cell_render border-box-sizing rendered_html">
-      <h3 id="Question">Question<a class="anchor-link" href="#Question">&#182;</a></h3><p><em>Write 3-6 sentences that provide background information about this study and describe the main question and/or goal of the project.</em></p>
-<p><em>Be sure to address the following topics:</em></p>
-<ul>
-<li>What species is being studied?</li>
-<li>Where were the individuals collected from? Were they kept in the lab before being sequenced?</li>
-<li>What type of sequencing was performed? Paired-end or single-end? How long are the sequences?</li>
-<li>Were any other analyses done with the sequences before they were given to you?</li>
-</ul>
-
-    </div>
-  </div></div>
-
-<div class="cell border-box-sizing text_cell rendered">
-  <div class="prompt input_prompt">
-</div>
-<div class="panel panel-primary nbgrader_cell">
-    <a name="comment-cell-105665040cea53f2"></a><a name="cell-105665040cea53f2"></a><div class="panel-heading"><span class="nbgrader-label">Student's answer</span><span class="pull-right">
-      Score: 3.0 / 3.0 <a href="#top">(Top)</a>
-  </span></div>
+  <div class="prompt input_prompt"></div>
+<div class="panel panel-primary nbgrader_cell"></div>
     <div class="panel-body">
       <div class="text_cell_render border-box-sizing rendered_html">
         <p>The species being studied is the Drosophila simulans, from which a sample of the flies was captured in Zuma, California and then inbred for several generations in a lab. Single-end illumina sequencing was performed for each of the flies and these sequences, which are billions of basepairs in length, were aligned to a reference genome for the D. simulans species. While most of the sequences aligned to the reference genome, there were some that did not, meaning that they are not usually a part of the D. simulans genome. Thus, the goal of this project is to determine where these unaligned sequences came from.</p>
-
       </div>
     </div>
     
@@ -12026,8 +11873,7 @@ span.nbgrader-label {
 </div>
 <div class="inner_cell">
     <div class="text_cell_render border-box-sizing rendered_html">
-      <h3 id="Hypothesis">Hypothesis<a class="anchor-link" href="#Hypothesis">&#182;</a></h3><p><em>Write 1-3 sentences describing the possible explanations for why your Illumina sequences did not align to the D. simulans reference genome. Include a prediction of which explanation is most important (i.e. which one will apply to the majority of sequences)</em></p>
-
+      <h3 id="Hypothesis">Hypothesis<a class="anchor-link" href="#Hypothesis">&#182;</a></h3>
     </div>
   </div></div>
 
@@ -12035,9 +11881,6 @@ span.nbgrader-label {
   <div class="prompt input_prompt">
 </div>
 <div class="panel panel-primary nbgrader_cell">
-    <a name="comment-cell-a32f7bee88778be3"></a><a name="cell-a32f7bee88778be3"></a><div class="panel-heading"><span class="nbgrader-label">Student's answer</span><span class="pull-right">
-      Score: 3.0 / 3.0 <a href="#top">(Top)</a>
-  </span></div>
     <div class="panel-body">
       <div class="text_cell_render border-box-sizing rendered_html">
         <p>I predict that the unaligned sequences were caused by viruses that were present in only some of the individual flies because the sequences had relatively high quality scores before and after filtering, making it unlikely that these sequences were a result of a sequencing error. I believe that these unaligned sequences are not likely from microbes in the flies because the entire sample was fed the same strain of yeast and since Wolbachia is known to prevent the birth of male flies, inbreeeding the flies would have been difficult.</p>
@@ -12059,20 +11902,7 @@ span.nbgrader-label {
 <div class="cell border-box-sizing text_cell rendered">
   <div class="prompt input_prompt">
 </div>
-<div class="inner_cell">
-    <div class="text_cell_render border-box-sizing rendered_html">
-      <p><em>The paragraph below should briefly describe how you were able to calculate the summary information about your Illumina data that is presented in the Results section</em></p>
-
-    </div>
-  </div></div>
-
-<div class="cell border-box-sizing text_cell rendered">
-  <div class="prompt input_prompt">
-</div>
 <div class="panel panel-primary nbgrader_cell">
-    <a name="comment-cell-69d3e5d10151be16"></a><a name="cell-69d3e5d10151be16"></a><div class="panel-heading"><span class="nbgrader-label">Student's answer</span><span class="pull-right">
-      Score: 2.0 / 2.0 <a href="#top">(Top)</a>
-  </span></div>
     <div class="panel-body">
       <div class="text_cell_render border-box-sizing rendered_html">
         <p>To obtain the summary information, I read in the compressed fastq files using the gzip module and the SeqIO module from Biopython. Within the loop, I counted the number of sequences there are in the file by accumulating the number of loops that ran and to find the total number of basepairs, I accumulated the length of each sequence in the file. Next, I generated a dictionary of the quality scores for each nucleotide in each sequence and used indexing to work with the first four and last four nucleotides in each sequence. I added the scores of the first four together and, separately, the last four together and divided by four to get the averages in each sequence. Next, I took the sum of all of the beginning average quality scores and, again separately, the sum of all of the final average quality scores to calculate the overall average scores for the first four and last four nucleotides of the file. Finally, I averaged the quality scores of every nucleotide in each sequence and summed up those values to calculate the overall quality score of the entire file.</p>
@@ -12085,20 +11915,7 @@ span.nbgrader-label {
 <div class="cell border-box-sizing text_cell rendered">
   <div class="prompt input_prompt">
 </div>
-<div class="inner_cell">
-    <div class="text_cell_render border-box-sizing rendered_html">
-      <p><em>This paragraph should briefly describe how you ran Trimmomatic including descriptions of the parameters you used and what they mean.</em></p>
-
-    </div>
-  </div></div>
-
-<div class="cell border-box-sizing text_cell rendered">
-  <div class="prompt input_prompt">
-</div>
 <div class="panel panel-primary nbgrader_cell">
-    <a name="comment-cell-cb035fc1caba4917"></a><a name="cell-cb035fc1caba4917"></a><div class="panel-heading"><span class="nbgrader-label">Student's answer</span><span class="pull-right">
-      Score: 4.0 / 2.0 <a href="#top">(Top)</a>
-  </span></div>
     <div class="panel-body">
       <div class="text_cell_render border-box-sizing rendered_html">
         <p>I used Trimmomatic by first importing the java and Trimmomatic modules. Then, I ran the Trimmomatic command in java using the parameters noted above to cut out the nucleotides with low quality scores from the sequences and the resulting filtered sequences were saved into a new fastq file.</p>
@@ -12156,46 +11973,13 @@ span.nbgrader-label {
   <div class="prompt input_prompt">
 </div>
 <div class="panel panel-primary nbgrader_cell">
-    <a name="comment-cell-b61be3d778e29197"></a><a name="cell-b61be3d778e29197"></a><div class="panel-heading"><span class="nbgrader-label">Student's answer</span><span class="pull-right">
-      Score: 0.0 / 2.0 <a href="#top">(Top)</a>
-  </span></div>
-    <div class="panel-body">
-      <div class="text_cell_render border-box-sizing rendered_html">
-        
-      </div>
-    </div>
-    
-  </div></div>
-
-<div class="cell border-box-sizing text_cell rendered">
-  <div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-    <div class="text_cell_render border-box-sizing rendered_html">
-      <p><em>Once the table is complete, delete the instructions under the Results header and write a few sentences below summarizing your table. You should address how the quality changed after filtering your data and include the percentage of the orginal data that you were able to keep after filtering.</em></p>
-
-    </div>
-  </div></div>
-
-<div class="cell border-box-sizing text_cell rendered">
-  <div class="prompt input_prompt">
-</div>
-<div class="panel panel-primary nbgrader_cell">
-    <a name="comment-cell-9cb1df2a39c4b46a"></a><a name="cell-9cb1df2a39c4b46a"></a><div class="panel-heading"><span class="nbgrader-label">Student's answer</span><span class="pull-right">
-      Score: 3.0 / 3.0 <a href="#top">(Top)</a>
-  </span></div>
     <div class="panel-body">
       <div class="text_cell_render border-box-sizing rendered_html">
         <p>There was an unusual change in the quality scores of the sequences after filtering the unaligned data. Normally, the quality score of a sequence is expected to increase after filtering it because the nucleotides with low quality scores are removed. However, in my analyis, while the average quality score of the last four nucleotides increased slightly, the other average scores decreased. After talking to Dr. Ellison about this, although it is definitely unusual, it could be because the unfiltered sequences already have relatively high quality scores and most of the sequences, 95.05%, were kept after filtering.</p>
 
       </div>
     </div>
-    <div class="panel-footer">
-  <div>
-    <b>Comments:</b> <p>Very well done, handling some unusual results.</p>
-
-  </div>
-</div>
+ 
   </div></div>
 
 <div class="cell border-box-sizing text_cell rendered">
@@ -12203,7 +11987,7 @@ span.nbgrader-label {
 </div>
 <div class="inner_cell">
     <div class="text_cell_render border-box-sizing rendered_html">
-      <h3 id="Code">Code<a class="anchor-link" href="#Code">&#182;</a></h3><h6 id="Here-is-where-you-should-include-the-code-and-Unix-commands-that-you-used-for-the-analyses-that-are-summarized-in-the-Results-section">Here is where you should include the code and Unix commands that you used for the analyses that are summarized in the Results section<a class="anchor-link" href="#Here-is-where-you-should-include-the-code-and-Unix-commands-that-you-used-for-the-analyses-that-are-summarized-in-the-Results-section">&#182;</a></h6>
+      <h3 id="Code">Code<a class="anchor-link" href="#Code">&#182;</a></h3>
     </div>
   </div></div>
 
@@ -12212,7 +11996,7 @@ span.nbgrader-label {
 </div>
 <div class="inner_cell">
     <div class="text_cell_render border-box-sizing rendered_html">
-      <p><em>Copy your Illumina data to your current directory, replacing NETID with your own NetID:</em></p>
+      <p><em>Copy the Illumina data to the current directory:</em></p>
 <p><code>/projects/genetics/genetics203/data/final_project/NETID.unaligned.fastq.gz</code></p>
 
     </div>
@@ -12221,9 +12005,6 @@ span.nbgrader-label {
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[9]:</div><div class="panel panel-primary nbgrader_cell">
-    <a name="comment-cell-575e76cef8940133"></a><a name="cell-575e76cef8940133"></a><div class="panel-heading"><span class="nbgrader-label">Student's answer</span><span class="pull-right">
-      Score: 0.25 / 0.25 <a href="#top">(Top)</a>
-  </span></div>
     <div class="panel-body">
       <div class="input_area">
         <div class=" highlight hl-ipython3"><pre><span></span><span class="n">cp</span> <span class="o">/</span><span class="n">projects</span><span class="o">/</span><span class="n">genetics</span><span class="o">/</span><span class="n">genetics203</span><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">final_project</span><span class="o">/</span><span class="n">hi70</span><span class="o">.</span><span class="n">unaligned</span><span class="o">.</span><span class="n">fastq</span><span class="o">.</span><span class="n">gz</span> <span class="o">.</span>
@@ -12241,7 +12022,7 @@ span.nbgrader-label {
 </div>
 <div class="inner_cell">
     <div class="text_cell_render border-box-sizing rendered_html">
-      <p><em>Load the modules that you will need to run Trimmomatic</em></p>
+      <p><em>Load the modules needed to run Trimmomatic</em></p>
 
     </div>
   </div></div>
@@ -12249,9 +12030,6 @@ span.nbgrader-label {
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[10]:</div><div class="panel panel-primary nbgrader_cell">
-    <a name="comment-cell-dce89a72292cde8e"></a><a name="cell-dce89a72292cde8e"></a><div class="panel-heading"><span class="nbgrader-label">Student's answer</span><span class="pull-right">
-      Score: 0.25 / 0.25 <a href="#top">(Top)</a>
-  </span></div>
     <div class="panel-body">
       <div class="input_area">
         <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%</span><span class="k">bash</span>
@@ -12271,19 +12049,11 @@ module load Trimmomatic
   <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
-    <div class="text_cell_render border-box-sizing rendered_html">
-      <p><em>Your Trimmomatic command should be in the cell below</em></p>
-<p><strong>IMPORTANT: you are working with millions of sequences, so this command will take 5-10 minutes to run. Do NOT try to run any other commands until it finishes</strong></p>
-
-    </div>
   </div></div>
 
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[1]:</div><div class="panel panel-primary nbgrader_cell">
-    <a name="comment-cell-8581042beb51b4fc"></a><a name="cell-8581042beb51b4fc"></a><div class="panel-heading"><span class="nbgrader-label">Student's answer</span><span class="pull-right">
-      Score: 1.0 / 1.0 <a href="#top">(Top)</a>
-  </span></div>
     <div class="panel-body">
       <div class="input_area">
         <div class=" highlight hl-ipython3"><pre><span></span><span class="n">java</span> <span class="o">-</span><span class="n">Xmx1G</span> <span class="o">-</span><span class="n">jar</span> <span class="o">/</span><span class="n">projects</span><span class="o">/</span><span class="n">community</span><span class="o">/</span><span class="n">Trimmomatic</span><span class="o">/</span><span class="n">Trimmomatic</span><span class="o">-</span><span class="mf">0.38</span><span class="o">/</span><span class="n">trimmomatic</span><span class="o">-</span><span class="mf">0.38</span><span class="o">.</span><span class="n">jar</span> <span class="n">SE</span> <span class="o">-</span><span class="n">threads</span> <span class="mi">1</span> <span class="n">hi70</span><span class="o">.</span><span class="n">unaligned</span><span class="o">.</span><span class="n">fastq</span><span class="o">.</span><span class="n">gz</span> <span class="n">hi70</span><span class="o">.</span><span class="n">unaligned_trimmed</span><span class="o">.</span><span class="n">fastq</span><span class="o">.</span><span class="n">gz</span> <span class="n">LEADING</span><span class="p">:</span><span class="mi">10</span> <span class="n">TRAILING</span><span class="p">:</span><span class="mi">10</span> <span class="n">SLIDINGWINDOW</span><span class="p">:</span><span class="mi">4</span><span class="p">:</span><span class="mi">15</span> <span class="n">ILLUMINACLIP</span><span class="p">:</span><span class="n">TruSeq3</span><span class="o">-</span><span class="n">SE</span><span class="o">.</span><span class="n">fa</span><span class="p">:</span><span class="mi">2</span><span class="p">:</span><span class="mi">30</span><span class="p">:</span><span class="mi">10</span> <span class="n">MINLEN</span><span class="p">:</span><span class="mi">50</span>
@@ -12326,17 +12096,12 @@ TrimmomaticSE: Completed successfully
 </div>
 <div class="inner_cell">
     <div class="text_cell_render border-box-sizing rendered_html">
-      <p><em>Your python code should be in the cell below</em></p>
-
     </div>
   </div></div>
 
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[2]:</div><div class="panel panel-primary nbgrader_cell">
-    <a name="comment-cell-779a2106cd2beb42"></a><a name="cell-779a2106cd2beb42"></a><div class="panel-heading"><span class="nbgrader-label">Student's answer</span><span class="pull-right">
-      Score: 3.25 / 3.25 <a href="#top">(Top)</a>
-  </span></div>
     <div class="panel-body">
       <div class="input_area">
         <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">gzip</span>
@@ -12492,17 +12257,11 @@ TrimmomaticSE: Completed successfully
   <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
-    <div class="text_cell_render border-box-sizing rendered_html">
-      <h5 id="IMPORTANT:-when-you-are-finished,-delete-the-original-FASTQ-file-since-you-do-not-need-it-any-more,-but-KEEP-your-trimmed-file">IMPORTANT: when you are finished, delete the original FASTQ file since you do not need it any more, but KEEP your trimmed file<a class="anchor-link" href="#IMPORTANT:-when-you-are-finished,-delete-the-original-FASTQ-file-since-you-do-not-need-it-any-more,-but-KEEP-your-trimmed-file">&#182;</a></h5>
-    </div>
   </div></div>
 
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[5]:</div><div class="panel panel-primary nbgrader_cell">
-    <a name="comment-cell-ab43aa2854f430a8"></a><a name="cell-ab43aa2854f430a8"></a><div class="panel-heading"><span class="nbgrader-label">Student's answer</span><span class="pull-right">
-      Score: 0.25 / 0.25 <a href="#top">(Top)</a>
-  </span></div>
     <div class="panel-body">
       <div class="input_area">
         <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%</span><span class="k">bash</span>
